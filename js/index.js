@@ -41,13 +41,13 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-const anchorElement = document.querySelectorAll("a");
-anchorElement[0].textContent = "Services";
-anchorElement[1].textContent = "Product";
-anchorElement[2].textContent = "Vision";
-anchorElement[3].textContent = "Features";
-anchorElement[4].textContent = "About";
-anchorElement[5].textContent = "Contact";
+const anchorElement = document.querySelectorAll("nav a");
+anchorElement[0].textContent = siteContent["nav"]["nav-item-1"]
+anchorElement[1].textContent = siteContent["nav"]["nav-item-2"]
+anchorElement[2].textContent = siteContent["nav"]["nav-item-3"]
+anchorElement[3].textContent = siteContent["nav"]["nav-item-4"]
+anchorElement[4].textContent = siteContent["nav"]["nav-item-5"]
+anchorElement[5].textContent = siteContent["nav"]["nav-item-6"]
 
 const ctaH1 = document.querySelector(".cta-text h1");
 ctaH1.textContent = siteContent["cta"]["h1"]
